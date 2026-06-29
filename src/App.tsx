@@ -6,6 +6,7 @@ import MainLayout from './layouts/MainLayout';
 import LanguageSwitch from './components/LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 import { useLang } from './hooks/useLang';
+import type { Language } from './i18n';
 
 function App() {
   const [activeTab, setActiveTab] = useState<'encrypt' | 'decrypt'>('encrypt');
@@ -15,7 +16,7 @@ function App() {
   const handleChangeLanguage = (lang: string) => {
     console.log('lang:', lang);
     i18n.changeLanguage(lang);
-    changeLang(lang);
+    changeLang(lang as Language);
   };
 
   return (

@@ -12,7 +12,7 @@ interface UseDecryptionReturn {
 }
 
 export function useDecryption(): UseDecryptionReturn {
-    const [decryptedData, setDecryptedData] = useState<DecryptedData | null>(null);
+    const [decryptedData, setDecryptedData] = useState<string | null>(null);
     const [isDecrypting, setIsDecrypting] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
