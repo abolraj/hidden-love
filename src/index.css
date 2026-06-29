@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: light --default, dark, cupcake, corporate;
-};
+  themes: light --default, dark --prefersdark, cupcake, valentine;
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: normal;
+  src: url(./fonts/Quicksand/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: bold;
+  src: url(./fonts/Quicksand/Quicksand-Bold.ttf);
+}
+
+@font-face {
+  font-family: Mikhak;
+  font-weight: normal;
+  src: url(./fonts/Mikhak/Mikhak-Regular.ttf);
+}
+
+@font-face {
+  font-family: Mikhak;
+  font-weight: bold;
+  src: url(./fonts/Mikhak/Mikhak-Bold.ttf);
+}
+
+
+@layer base {
+  body {
+    @apply min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50;
+    font-family: Quicksand, 'Courier New', Courier, monospace;
+  }
+
+}
+
+html[lang='fa'] body {
+  font-family: Mikhak !important;
+}
