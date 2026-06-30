@@ -28,7 +28,7 @@ function App() {
               className={`tab gap-2 h-auto ${activeTab === 'encrypt' ? 'tab-active' : ''}`}
               onClick={() => setActiveTab('encrypt')}
             >
-              <Lock className="size-6" />
+              <Lock className="size-6 shrink-0" />
               <p>
                 {t('encrypt')}
               </p>
@@ -37,9 +37,9 @@ function App() {
               className={`tab gap-2 h-auto ${activeTab === 'decrypt' ? 'tab-active' : ''}`}
               onClick={() => setActiveTab('decrypt')}
             >
-              <Unlock className="size-6" />
+              <Unlock className="size-6 shrink-0" />
               <p>
-                {t('encrypt')}
+                {t('decrypt')}
               </p>
             </button>
           </div>
