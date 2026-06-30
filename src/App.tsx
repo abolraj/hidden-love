@@ -14,7 +14,7 @@ function App() {
   const { lang, changeLang } = useLang();
 
   const handleChangeLanguage = (lang: string) => {
-    console.log('lang:', lang);
+    
     i18n.changeLanguage(lang);
     changeLang(lang as Language);
   };
