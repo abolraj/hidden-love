@@ -27,7 +27,7 @@ export default function MainLayout({ children }: LayoutProps) {
 
                 <main>{children}</main>
 
-                <footer className="text-center mt-12 text-base-content/40 text-sm flex flex-wrap justify-center gap-2">
+                <footer className="text-center mt-12 text-base-content/40 text-sm flex flex-wrap items-center justify-center gap-2">
                     <p className='whitespace-pre-line'>
                         {t('made_with')}
                         <Heart className="w-4 h-4 text-error fill-error inline mx-1" />
