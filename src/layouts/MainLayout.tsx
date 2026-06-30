@@ -15,7 +15,7 @@ export default function MainLayout({ children }: LayoutProps) {
                 <header className="text-center mb-12">
                     <h1 className="text-5xl font-bold flex items-center justify-center gap-3 mb-2">
                         <Heart className="w-10 h-10 text-error fill-error" />
-                        <span className="bg-gradient-to-r from-error to-primary bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r leading-16 from-error to-primary bg-clip-text text-transparent">
                             {t('hidden_love')}
                         </span>
                         <Heart className="w-10 h-10 text-error fill-error" />
