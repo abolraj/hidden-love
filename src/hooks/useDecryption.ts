@@ -26,7 +26,7 @@ export function useDecryption(): UseDecryptionReturn {
             const links = secret.match(linksRegEx);
             const link = links ? links[links.length - 1] : '';
             const url = new URL(link);
-            const encodedData = url.searchParams.get('q');
+            const encodedData = url.searchParams.get('q')?.replaceAll(' ','+');
 
             if (!encodedData) {
                 throw new Error('No encrypted data found in URL');
