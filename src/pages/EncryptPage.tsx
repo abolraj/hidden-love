@@ -81,7 +81,7 @@ export default function EncryptPage() {
                     </label>
 
                     <label className="form-control flex flex-col" htmlFor='password'>
-                        <span className="label-text font-medium mb-2">{t('password_optional')}</span>
+                        <span className="label-text text-lg mb-2">{t('password_optional')}</span>
                         <div className="relative">
                             <input
                                 id='password'

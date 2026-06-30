@@ -33,7 +33,7 @@ export default function DecryptPage() {
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <label className="form-control flex flex-col">
-                        <span className="label-text font-medium mb-2">{t('secret_required')}</span>
+                        <span className="label-text text-lg mb-2">{t('secret_required')}</span>
                         <textarea
                             placeholder={t('paste_encrypted_text')}
                             className="textarea textarea-bordered w-full text-sm"
@@ -46,7 +46,7 @@ export default function DecryptPage() {
                     </label>
 
                     <label className="form-control flex flex-col">
-                        <span className="label-text font-medium mb-2">{t('password_if_used')}</span>
+                        <span className="label-text text-lg mb-2">{t('password_if_used')}</span>
                         <div className="relative">
                             <input
                                 type={showPassword ? 'text' : 'password'}
@@ -104,7 +104,7 @@ export default function DecryptPage() {
                     <div className="space-y-3 pt-2">
                         <div className="bg-base-300 rounded-box p-4">
                             <span className="text-xs font-semibold text-error uppercase">{t('message')}</span>
-                            <p className="text-lg mt-1 whitespace-pre-wrap">{decryptedData}</p>
+                            <p className="text-lg mt-1 whitespace-pre-line">{decryptedData}</p>
                         </div>
 
                         <div className="text-center pt-2">
